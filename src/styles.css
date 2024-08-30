@@ -1,0 +1,78 @@
+:root {
+    --yellow: #eaca44;
+    --brown: #4f3923;
+    --black: #000;
+    --white: #f4f3f3;
+    --gray: #737373;
+  }
+
+@font-face {
+    font-family: 'Lilita One';
+    src: url('../public/Lilita_One/LilitaOne-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--yellow) 0%, var(--yellow) 50%, var(--brown) 50%, var(--brown) 100%);
+    min-height: 100vh;
+    font-family: 'Lilita One', sans-serif;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+input[type="search"] {
+    width: 95vh;
+    height: 85px;
+    padding: 8px;
+    border-radius: 50px;
+    font-family: 'Lilita One';
+    font-size:larger;
+    color: var(--gray);
+    outline: none;
+}
+
+.donut-card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    border-radius: 25px;
+    /* border: 10px solid var(--black); */
+    
+    background-color: var(--yellow);
+    box-shadow: 0 50px 0 0 var(--black); 
+}
+
+.donut-card img {
+    margin-top: -15px;
+    box-sizing: border-box;
+    padding: 25px;
+    width: 100%;
+    height: auto; 
+}
+
+.donut-card p {
+    font-size: xx-large;
+    color: var(--brown);
+    
+    transform: translateX(-50%); 
+    left: 50%; 
+    margin: 0; 
+    position: absolute; 
+    bottom: 0;
+}
+
+.donut-list {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+}
