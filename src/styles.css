@@ -17,6 +17,7 @@ body {
     background: linear-gradient(to bottom, var(--yellow) 0%, var(--yellow) 50%, var(--brown) 50%, var(--brown) 100%);
     min-height: 100vh;
     font-family: 'Lilita One', sans-serif;
+    overflow-y: hidden;
 }
 
 .home {
@@ -81,3 +82,4 @@ input[type="search"] {
     display: flex;
     justify-content: center;
 }
+
