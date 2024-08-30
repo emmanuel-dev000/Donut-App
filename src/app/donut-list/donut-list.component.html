@@ -1,5 +1,7 @@
 <div class="donut-list">
     <ng-container *ngFor="let d of donuts">
-        <app-donut-card [name]="d"></app-donut-card>
+        <ng-container *ngIf="showDonut(d)">
+            <app-donut-card [name]="d"></app-donut-card>
+        </ng-container>
     </ng-container>
 </div>

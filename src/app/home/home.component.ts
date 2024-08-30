@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { DonutService } from '../donut.service';
 
 @Component({
   selector: 'app-home',
@@ -12,9 +13,12 @@ import { FormsModule } from '@angular/forms';
 })
 export class HomeComponent {
   input : string = "";
-  // searchDonut(e : Event) {
-  //   const input = e.target as HTMLInputElement;
-  //   console.log(input.value);
-    
-  // }
+
+  constructor(private donutService: DonutService) {}
+
+  onInput() {
+    // const input = e.target as HTMLInputElement;
+    // console.log(input.value);
+    this.donutService.updateInput(this.input);
+  }
 }
